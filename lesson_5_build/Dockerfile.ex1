@@ -1,11 +1,12 @@
 FROM
 
-LABEL
-ENV
-EXPOSE
+LABEL author=abpb
+ENV LESSON_NUMBER=5
+EXPOSE 8888
 
-ADD
-COPY
+ADD 
+COPY src/ex1.conf /etc/nginx/nginx.conf
+COPY src/ex1_web.html src/ex1.conf /var/www
 RUN
 
 
